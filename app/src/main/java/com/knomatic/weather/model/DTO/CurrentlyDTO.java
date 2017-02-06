@@ -10,6 +10,9 @@ public class CurrentlyDTO {
     private String icon;
     private String precipType;
     private Double temperature;
+    private Double humidity;
+    private Double windSpeed;
+
 
     public CurrentlyDTO(String summary, String icon, String precipType, Double temperature){
         this.summary = summary;
@@ -48,5 +51,21 @@ public class CurrentlyDTO {
 
     public void setTemperature(Double temperature) {
         this.temperature = temperature;
+    }
+
+    public Double getHumidity() {
+        return humidity;
+    }
+
+    public void setHumidity(Double humidity) {
+        this.humidity = humidity;
+    }
+
+    public Double getWindSpeed() {
+        return windSpeed;
+    }
+
+    public void setWindSpeed(Double windSpeed) {
+        this.windSpeed = windSpeed;
     }
 }

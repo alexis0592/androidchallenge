@@ -37,6 +37,7 @@ public class WeatherActivityFragment extends Fragment implements Callback<Foreca
     private TextView summaryTextView;
     private TextView precipirTypeTextView;
     private TextView temperatureTextView;
+    private TextView humidityTextView;
     private Retrofit retrofit;
     private ForecastDTO forecastDTO;
     private WeatherController weatherController;
@@ -67,13 +68,8 @@ public class WeatherActivityFragment extends Fragment implements Callback<Foreca
         this.summaryTextView = (TextView)view.findViewById(R.id.text_view_summary);
         this.precipirTypeTextView = (TextView) view.findViewById(R.id.textViewPrecipipType);
         this.temperatureTextView = (TextView) view.findViewById(R.id.txtViewTemp);
+        this.humidityTextView = (TextView) view.findViewById(R.id.txtViewHumidity);
     }
-
-    public void setComponents(ForecastDTO forecastDTO){
-        summaryTextView = (TextView) getActivity().findViewById(R.id.text_view_summary);
-        summaryTextView.setText(forecastDTO.getCurrently().getSummary());
-    }
-
 
     public void executeDarkSkyCall(){
         weatherController = new WeatherController(this.getContext());
@@ -101,6 +97,7 @@ public class WeatherActivityFragment extends Fragment implements Callback<Foreca
                 summaryTextView.setText(response.body().getCurrently().getSummary());
                 precipirTypeTextView.setText(response.body().getCurrently().getPrecipType());
                 temperatureTextView.setText(response.body().getCurrently().getTemperature() + "º");
+                humidityTextView.setText(String.valueOf(response.body().getCurrently().getHumidity()));
             }
 
             @Override

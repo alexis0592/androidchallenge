@@ -1,5 +1,7 @@
 package com.knomatic.weather.utils;
 
+import java.util.Calendar;
+
 /**
  * Created by alexiscalderon on 5/02/17.
  */
@@ -30,6 +32,21 @@ public class ForeCastUtils implements IForeCastUtils {
         }
 
         return nameConverted;
+    }
+
+    public String[] foreCastDays(){
+
+        String[] daysOfWeek = new String[]{"Monday", "Tuesday", "Wednesday", "Thursday", "Friday",
+        "Saturday", "Sunday"};
+
+        Calendar calendar = Calendar.getInstance();
+        int day = calendar.get(Calendar.DAY_OF_WEEK);
+
+        for(int i = 0; i < daysOfWeek.length; i++){
+            //daysOfWeek[i] = daysOfWeek
+        }
+
+        return null;
     }
 
 

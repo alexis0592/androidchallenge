@@ -22,7 +22,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/txtViewDay"
             android:layout_marginTop="10dp"
-            android:layout_marginLeft="5dp"/>
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/white"/>
 
         <TextView
             android:text="Summary"
@@ -30,7 +31,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/txtViewSummary"
             android:layout_marginTop="10dp"
-            android:layout_marginLeft="5dp"/>
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/white"/>
 
         <TextView
             android:text="Tempmin"
@@ -38,7 +40,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/txtTempMin"
             android:layout_marginTop="10dp"
-            android:layout_marginLeft="5dp"/>
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/white"/>
 
         <TextView
             android:text="TempMax"
@@ -46,6 +49,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/txtViewTempMax"
             android:layout_marginTop="10dp"
-            android:layout_marginLeft="5dp"/>
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/white"/>
     </LinearLayout>
 </LinearLayout>
