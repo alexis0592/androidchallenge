@@ -29,7 +29,6 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class ForecastActivityFragment extends Fragment {
 
     private ListView forecastItemsListView;
-    private ForeCastServicesImpl foreCastServices;
     private WeatherController weatherController;
     private ForeCastServicesImpl foreCastServicesInstance;
     private Retrofit retrofit;

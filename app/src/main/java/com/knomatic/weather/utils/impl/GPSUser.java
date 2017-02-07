@@ -1,4 +1,4 @@
-package com.knomatic.weather.utils;
+package com.knomatic.weather.utils.impl;
 
 import android.app.Service;
 import android.content.Context;
@@ -11,11 +11,13 @@ import android.os.IBinder;
 import android.support.annotation.Nullable;
 import android.util.Log;
 
+import com.knomatic.weather.utils.IGPSUser;
+
 /**
  * Created by alexiscalderon on 4/02/17.
  */
 
-public class GPSUser extends Service implements IGPSUser , LocationListener{
+public class GPSUser extends Service implements IGPSUser, LocationListener{
 
     private final Context mContext;
     private boolean isGPSEnabled = false;
@@ -43,7 +45,7 @@ public class GPSUser extends Service implements IGPSUser , LocationListener{
         try {
             this.locationManager = (LocationManager) mContext.getSystemService(LOCATION_SERVICE);
 
-            //obtener estado del GPS
+            //get GPS status
             this.isGPSEnabled = this.locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER);
 
             //get network status

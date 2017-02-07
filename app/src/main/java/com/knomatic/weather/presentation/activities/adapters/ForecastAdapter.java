@@ -11,9 +11,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.knomatic.weather.R;
-import com.knomatic.weather.model.DTO.DailyDTO;
 import com.knomatic.weather.model.DTO.DailyDataDTO;
-import com.knomatic.weather.utils.ForeCastUtils;
+import com.knomatic.weather.utils.impl.ForeCastUtils;
 import com.knomatic.weather.utils.IForeCastUtils;
 
 import java.util.List;
@@ -63,11 +62,14 @@ public class ForecastAdapter extends ArrayAdapter {
         maxTemperatureTextView.setText(String.valueOf(dailyDataDTOs.get(position).getTemperatureMax()) +
                 "ºF temp max");
 
-
         return item;
     }
 
-
+    /**
+     * Method that return int resource from string name, for imageView set
+     * @param name
+     * @return int value from name
+     */
     public int convertStringToIntRes(String name){
         Resources res = getContext().getResources();
         int resID = res.getIdentifier(name, "drawable", getContext().getPackageName());

@@ -1,7 +1,8 @@
-package com.knomatic.weather.utils;
+package com.knomatic.weather.utils.impl;
+
+import com.knomatic.weather.utils.IForeCastUtils;
 
 import java.util.Calendar;
-import java.util.Date;
 
 /**
  * Created by alexiscalderon on 5/02/17.
@@ -23,6 +24,11 @@ public class ForeCastUtils implements IForeCastUtils {
         return instance;
     }
 
+    /**
+     * Method that return the name for search in resources drawable
+     * @param iconName
+     * @return
+     */
     @Override
     public String convertIconName(String iconName) {
 
@@ -49,6 +55,11 @@ public class ForeCastUtils implements IForeCastUtils {
         return nameConverted;
     }
 
+
+    /**
+     * Method that return the order of the day, based of the actual day, for forecast service
+     * @return
+     */
     @Override
     public Integer[] foreCastDays(){
 

@@ -1,7 +1,6 @@
 package com.knomatic.weather.presentation.activities.fragments;
 
 import android.app.ProgressDialog;
-import android.content.Intent;
 import android.content.res.Resources;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
@@ -15,13 +14,10 @@ import android.widget.Toast;
 import com.knomatic.weather.R;
 import com.knomatic.weather.controllers.impl.WeatherController;
 import com.knomatic.weather.model.DTO.ForecastDTO;
-import com.knomatic.weather.presentation.activities.WeatherActivity;
 import com.knomatic.weather.services.ForeCastServicesImpl;
 import com.knomatic.weather.services.IForecastServicesAPI;
-import com.knomatic.weather.utils.ForeCastUtils;
+import com.knomatic.weather.utils.impl.ForeCastUtils;
 import com.knomatic.weather.utils.IForeCastUtils;
-
-import org.w3c.dom.Text;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -40,7 +36,6 @@ public class WeatherActivityFragment extends Fragment implements Callback<Foreca
     private TextView temperatureTextView;
     private TextView humidityTextView;
     private Retrofit retrofit;
-    private ForecastDTO forecastDTO;
     private WeatherController weatherController;
     private ForeCastServicesImpl foreCastServicesInstance;
     private IForeCastUtils foreCastUtils;
@@ -77,9 +72,9 @@ public class WeatherActivityFragment extends Fragment implements Callback<Foreca
     }
 
     public void executeDarkSkyCall(){
-        weatherController = new WeatherController(this.getContext());
-        foreCastServicesInstance = ForeCastServicesImpl.getInstance();
-        foreCastUtils = ForeCastUtils.getInstance();
+        this.weatherController = new WeatherController(this.getContext());
+        this.foreCastServicesInstance = ForeCastServicesImpl.getInstance();
+        this.foreCastUtils = ForeCastUtils.getInstance();
         this.progressDialog.show();
 
 
@@ -91,6 +86,7 @@ public class WeatherActivityFragment extends Fragment implements Callback<Foreca
         Call<ForecastDTO> call = forecastServicesAPI.getForecast(getString(R.string.darksky_API_key),
                 String.valueOf(weatherController.getLocation().getLatitude()),
                 String.valueOf(weatherController.getLocation().getLongitude()));
+
         call.enqueue(new Callback<ForecastDTO>() {
             @Override
             public void onResponse(Call<ForecastDTO> call, Response<ForecastDTO> response) {
@@ -109,7 +105,7 @@ public class WeatherActivityFragment extends Fragment implements Callback<Foreca
 
             @Override
             public void onFailure(Call<ForecastDTO> call, Throwable t) {
-                Toast.makeText(getContext(),"Thera was a problem with the service. Please Try again",
+                Toast.makeText(getContext(),"There was a problem with the service. Please Try again",
                         Toast.LENGTH_LONG);
             }
         });
@@ -125,6 +121,11 @@ public class WeatherActivityFragment extends Fragment implements Callback<Foreca
 
     }
 
+    /**
+     * Method that return int resource from string name, for imageView set
+     * @param name
+     * @return int value from name
+     */
     public int convertStringToIntRes(String name){
         Resources res = getResources();
         int resID = res.getIdentifier(name, "drawable", getContext().getPackageName());

@@ -8,15 +8,15 @@ import android.location.Location;
 
 public interface IGPSUser {
 
-    public Location getUserLocation();
+     Location getUserLocation();
 
-    public void stopUsingGPS();
+     void stopUsingGPS();
 
-    public double getLatitude();
+     double getLatitude();
 
-    public double getLongitude();
+     double getLongitude();
 
-    public boolean canGetLocation();
+     boolean canGetLocation();
 
-    public float getAccuracy();
+     float getAccuracy();
 }
