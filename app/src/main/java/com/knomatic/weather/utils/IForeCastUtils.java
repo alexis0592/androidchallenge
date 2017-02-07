@@ -8,5 +8,7 @@ public interface IForeCastUtils {
 
     String convertIconName(String iconName);
 
+    Integer[] foreCastDays();
+
 
 }

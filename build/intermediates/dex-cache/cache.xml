@@ -3,6 +3,51 @@
 
     <item
         is-multidex="true"
+        jar="/Users/alexiscalderon/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.8.0/5ea7af56cc7c567ed9856d99efb30740e9b17ff/okio-1.8.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="05ea7af56cc7c567ed9856d99efb30740e9b17ff">
+        <dex dex="/Users/alexiscalderon/Documents/Proyectos/Android/androidchallenge/app/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.8.0_e4e139ed56479de2c8ee76ff155de02074b73a62/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alexiscalderon/Documents/Proyectos/Android/androidchallenge/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
+        <dex dex="/Users/alexiscalderon/Documents/Proyectos/Android/androidchallenge/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-23.1.1_a88451b269683f8bda96d3e8c49a014d606663d8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alexiscalderon/Documents/Proyectos/Android/androidchallenge/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="/Users/alexiscalderon/Documents/Proyectos/Android/androidchallenge/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.1.1_139bfdf472e9339432cdb8768af863c06210c43c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alexiscalderon/Documents/Proyectos/Android/androidchallenge/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="379471b2bd17d9737c050345c08e8c7d16589784">
+        <dex dex="/Users/alexiscalderon/Documents/Proyectos/Android/androidchallenge/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-23.1.1_ccd8a24c67a3ad775e6919ab91c3f068fbcbf907/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alexiscalderon/Documents/Proyectos/Android/androidchallenge/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="3cd964bf1604c4665a1987260f657c7cfdabba31">
+        <dex dex="/Users/alexiscalderon/Documents/Proyectos/Android/androidchallenge/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_0f6d4a23a49d844487ec8986e48863cb392dbe65/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/alexiscalderon/Documents/Proyectos/Android/androidchallenge/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/libs/internal_impl-23.1.1.jar"
         jumboMode="true"
         optimize="true"
@@ -27,15 +72,6 @@
         revision="23.0.2"
         sha1="09c5e804bc67fc0580360043dff067df574a60d4">
         <dex dex="/Users/alexiscalderon/Documents/Proyectos/Android/androidchallenge/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-23.1.1_0f11c7141bddefd976d624e42fa6cce1ce2f6c63/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/alexiscalderon/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.8.0/5ea7af56cc7c567ed9856d99efb30740e9b17ff/okio-1.8.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="05ea7af56cc7c567ed9856d99efb30740e9b17ff">
-        <dex dex="/Users/alexiscalderon/Documents/Proyectos/Android/androidchallenge/app/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.8.0_e4e139ed56479de2c8ee76ff155de02074b73a62/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -66,29 +102,11 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/alexiscalderon/Documents/Proyectos/Android/androidchallenge/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
-        <dex dex="/Users/alexiscalderon/Documents/Proyectos/Android/androidchallenge/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-23.1.1_a88451b269683f8bda96d3e8c49a014d606663d8/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/alexiscalderon/Documents/Proyectos/Android/androidchallenge/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
-        <dex dex="/Users/alexiscalderon/Documents/Proyectos/Android/androidchallenge/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.1.1_139bfdf472e9339432cdb8768af863c06210c43c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/alexiscalderon/Documents/Proyectos/Android/androidchallenge/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.2"
-        sha1="3d950b781af977a4256ea3ae91c3a3d486f9ff09">
+        sha1="ad0ee97d74cfbbfe685364089b6e494d6463aa9b">
         <dex dex="/Users/alexiscalderon/Documents/Proyectos/Android/androidchallenge/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_2020711ed2109ab259e68f5d9339c9075c685adf/classes.dex" />
     </item>
     <item
@@ -99,24 +117,6 @@
         revision="23.0.2"
         sha1="2de7cd8b95b7021b1d597f049bcb422055119f2c">
         <dex dex="/Users/alexiscalderon/Documents/Proyectos/Android/androidchallenge/app/build/intermediates/transforms/dex/debug/folders/1000/10/retrofit-2.1.0_647677bc978e83eee16a8a274a3c9e0dfa299974/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/alexiscalderon/Documents/Proyectos/Android/androidchallenge/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="379471b2bd17d9737c050345c08e8c7d16589784">
-        <dex dex="/Users/alexiscalderon/Documents/Proyectos/Android/androidchallenge/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-23.1.1_ccd8a24c67a3ad775e6919ab91c3f068fbcbf907/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/alexiscalderon/Documents/Proyectos/Android/androidchallenge/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="77d3186d33d1166a8b31a0ec1b2c5fcd6a09940d">
-        <dex dex="/Users/alexiscalderon/Documents/Proyectos/Android/androidchallenge/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_0f6d4a23a49d844487ec8986e48863cb392dbe65/classes.dex" />
     </item>
 
 </items>

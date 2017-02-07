@@ -28,6 +28,7 @@
         android:layout_marginTop="10dp"
         android:textSize="16dp"
         android:textAlignment="center"
+        android:textStyle="bold"
         android:textColor="@android:color/white"/>
 
     <LinearLayout
@@ -40,8 +41,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/textView"
+            android:textStyle="bold"
             android:layout_weight="1"
-            android:textSize="20dp"
+            android:textSize="16dp"
             android:textColor="@android:color/white"
             android:layout_marginTop="10dp"/>
 
@@ -52,7 +54,7 @@
             android:id="@+id/textViewPrecipipType"
             android:layout_marginTop="10dp"
             android:layout_marginLeft="5dp"
-            android:textSize="20dp"
+            android:textSize="15dp"
             android:textColor="@android:color/white"
             android:layout_weight="1" />
     </LinearLayout>
@@ -66,7 +68,8 @@
             android:text="Temperature:"
             android:layout_marginTop="10dp"
             android:textColor="@android:color/white"
-            android:textSize="20dp"
+            android:textSize="16dp"
+            android:textStyle="bold"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/textView2"
@@ -79,7 +82,7 @@
             android:id="@+id/txtViewTemp"
             android:layout_marginTop="10dp"
             android:layout_marginLeft="5dp"
-            android:textSize="20dp"
+            android:textSize="15dp"
             android:textColor="@android:color/white"
             android:layout_weight="1" />
     </LinearLayout>
@@ -92,17 +95,18 @@
         <TextView
             android:text="Humidity:"
             android:textColor="@android:color/white"
-            android:textSize="20dp"
+            android:textSize="16dp"
             android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/textView4"
+            android:textStyle="bold"
             android:layout_weight="1" />
 
         <TextView
             android:text="Humidity"
             android:textColor="@android:color/white"
-            android:textSize="20dp"
+            android:textSize="15dp"
             android:layout_marginTop="10dp"
             android:layout_marginLeft="5dp"
             android:layout_width="wrap_content"

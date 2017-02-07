@@ -1,5 +1,6 @@
 package com.knomatic.weather.presentation.activities.fragments;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.support.v4.app.Fragment;
@@ -43,6 +44,7 @@ public class WeatherActivityFragment extends Fragment implements Callback<Foreca
     private WeatherController weatherController;
     private ForeCastServicesImpl foreCastServicesInstance;
     private IForeCastUtils foreCastUtils;
+    private ProgressDialog progressDialog;
 
     public static WeatherActivityFragment newInstance(){
         WeatherActivityFragment weatherActivityFragment = new WeatherActivityFragment();
@@ -69,12 +71,16 @@ public class WeatherActivityFragment extends Fragment implements Callback<Foreca
         this.precipirTypeTextView = (TextView) view.findViewById(R.id.textViewPrecipipType);
         this.temperatureTextView = (TextView) view.findViewById(R.id.txtViewTemp);
         this.humidityTextView = (TextView) view.findViewById(R.id.txtViewHumidity);
+        this.progressDialog = new ProgressDialog((this.getContext()));
+        this.progressDialog.setMessage("Downloading Forecast Data. Please Wait");
+        this.progressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
     }
 
     public void executeDarkSkyCall(){
         weatherController = new WeatherController(this.getContext());
         foreCastServicesInstance = ForeCastServicesImpl.getInstance();
-        foreCastUtils = new ForeCastUtils();
+        foreCastUtils = ForeCastUtils.getInstance();
+        this.progressDialog.show();
 
 
         this.retrofit = new Retrofit.Builder().baseUrl(IForecastServicesAPI.ENDPOINT)
@@ -90,14 +96,15 @@ public class WeatherActivityFragment extends Fragment implements Callback<Foreca
             public void onResponse(Call<ForecastDTO> call, Response<ForecastDTO> response) {
                 foreCastServicesInstance.setForeCastResponse(response.body());
 
-                Resources res = getResources();
                 String mDrawableName = foreCastUtils.convertIconName(response.body().getCurrently().getIcon());
                 iconImageView.setImageResource(convertStringToIntRes(mDrawableName));
 
                 summaryTextView.setText(response.body().getCurrently().getSummary());
                 precipirTypeTextView.setText(response.body().getCurrently().getPrecipType());
-                temperatureTextView.setText(response.body().getCurrently().getTemperature() + "º");
+                temperatureTextView.setText(response.body().getCurrently().getTemperature() + "ºF");
                 humidityTextView.setText(String.valueOf(response.body().getCurrently().getHumidity()));
+
+                progressDialog.dismiss();
             }
 
             @Override
