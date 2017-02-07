@@ -42,10 +42,11 @@ Your time is valuable and we understand that.  Our goal is for you to spend abou
 ## Questions to Answer
 Please answer the following in about a paragraph.
 
-1.  How long did you spend on completing this challenge?
-2.  How far were you at 3 hours?
-3.  What needs to be finished/fixed for this to be use in a production app?
-4.  What did you think of this challenge?
-5.  What part was unclear?
-6.  What could we do to make this challenge better?
-7.  What did we forget to test you on?
+1.  How long did you spend on completing this challenge? I Spent 11 hours in this challenge
+2.  How far were you at 3 hours? In 3 hours, I had the User Location, and I had integrated Retrofit API in the app, and I obtained the Service Data, but in that moment I didn't have any screen developed. I spent time finding the best way to return the data from the service in a service layer, but it didn't work as I expected, so I continued.
+3.  What needs to be finished/fixed for this to be used in a production app? To be used in a production app, I have to finish some validation data, and show to user for example an option to turn on GPS or Wifi. I have to translate all Strings and put in a String.xml file to support all languages. Maybe showing an option to change Farenheit to celsius degree. All the drawable resource have to be in diferent sizes to support all screens. 
+To improve the graphic interface for the user and implement more test cases.
+4.  What did you think of this challenge? I think that this challenge evaluate many aspects in the lifecycle in the android app development.
+5.  What part was unclear? I think that the main objective of this challenge was clear, maybe the API documentation in the data that service returned was unclear to show to user, because it uses technical information that I don't understand very well.
+6.  What could we do to make this challenge better? A brief documentation of data that service return or what information can be relevant to show in user's interface. An option that the user can change between Celsius and Farenheit degrees.
+7.  What did we forget to test you on? Integration with other services like: OAuth, google maps, and SQLite.
